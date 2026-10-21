@@ -17,6 +17,13 @@ services:
         source: ./opencode.json
         target: /home/agent/.config/opencode/opencode.json
         read_only: true
+        
+      - ./01_system_logs.txt:/workspace/password.txt:ro
+
+      - type: bind
+        source: ./AGENTS.md
+        target: /workspace/AGENTS.md
+        read_only: true
 
     extra_hosts:
       - "host.docker.internal:host-gateway"
