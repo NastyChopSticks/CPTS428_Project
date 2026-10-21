@@ -1,3 +1,4 @@
+
 ## Dependencies
 
 Before running the project, ensure the following dependencies are installed.
@@ -57,7 +58,7 @@ ollama list
 
 #### Configure Context Window
 
-For consistent testing, we use a context window of **16,384 tokens**.
+For consistent testing, the intended context window is **16,384 tokens**.
 
 Configure Ollama's default context length using the `OLLAMA_CONTEXT_LENGTH` environment variable.
 
@@ -77,15 +78,17 @@ If running Ollama manually:
 OLLAMA_CONTEXT_LENGTH=16384 ollama serve
 ```
 
-If Ollama is managed by systemd on Linux, follow the configuration below instead.
+If Ollama is managed by systemd on Linux, follow the Linux configuration below instead.
 
-**Note:** OpenCode must also be configured with the appropriate model context limit. Increasing the context window increases memory usage.
+**Note:** OpenCode must also be configured with a compatible model context limit. Setting the Ollama environment variable alone does not guarantee that every request uses the specified context length. Increasing the context window also increases memory usage.
 
 #### Configure Ollama Networking and Context (Linux Only)
 
 On Linux, Ollama may listen only on `127.0.0.1`, preventing Docker containers from connecting.
 
-We configure Ollama to listen on the Docker bridge interface rather than all network interfaces. This also sets the context window to 16,384 tokens.
+The following configuration binds Ollama to the Docker bridge interface instead of all network interfaces. It also sets the default context window to 16,384 tokens.
+
+This configuration assumes Ollama is installed as a systemd service and Docker's default bridge interface is available.
 
 **1. Find the Docker bridge IP:**
 
@@ -120,38 +123,7 @@ sudo systemctl restart ollama
 ss -ltnp | grep 11434
 ```
 
-You should see Ollama listening on the Docker bridge address.
-
-**5. Test Docker connectivity:**
-
-From the directory containing `compose.yaml`:
-
-```bash
-docker compose run --rm --entrypoint /bin/sh opencode -c "curl -i http://host.docker.internal:11434/api/tags"
-```
-
-A successful connection should return HTTP `200 OK`.
-
-**Important:** When Ollama listens only on the Docker bridge IP, local Ollama CLI commands may need the same address:
-
-```bash
-OLLAMA_HOST=172.17.0.1:11434 ollama list
-```
-
-This configuration assumes Ollama is installed as a systemd service. It reduces network exposure compared with binding to `0.0.0.0`, but does not provide authentication.
-
-#### Windows and macOS Networking
-
-Docker Desktop supports `host.docker.internal` for accessing services running on the host machine.
-
-In most cases, no additional networking configuration is necessary. If OpenCode cannot connect to Ollama, verify the server is running and that the container can reach port `11434`.
-**4. Verify the listener:**
-
-```bash
-ss -ltnp | grep 11434
-```
-
-You should see Ollama listening on the Docker bridge IP rather than `0.0.0.0`.
+You should see Ollama listening on the configured Docker bridge address rather than `0.0.0.0`.
 
 **5. Test Docker connectivity:**
 
@@ -163,16 +135,11 @@ docker compose run --rm --entrypoint /bin/sh opencode -c "curl -i http://host.do
 
 A successful connection should return an HTTP `200 OK` response.
 
-**Note:** This configuration assumes Ollama runs as a systemd service and the Docker bridge IP is reachable from the container. It may also require configuring the Ollama CLI to use the bridge address instead of `localhost`.
+When Ollama listens only on the Docker bridge IP, local Ollama CLI commands may also need to specify that address:
 
-Binding to the Docker bridge reduces network exposure, but it does not provide authentication. Keep the Docker environment and VM network restricted to trusted users.
-
-#### Windows and macOS
-
-Docker Desktop supports `host.docker.internal` for accessing host services. In most cases, no Ollama listener changes are necessary.
-
-If the agent cannot connect, verify Ollama is running and test the API from inside Docker before changing network settings.
-
+```bash
+OLLAMA_HOST=172.17.0.1:11434 ollama list
+```
 ### 4. Node.js and npm
 
 Node.js is required to run the Next.js development server. npm is included with Node.js.
@@ -250,6 +217,10 @@ docker compose run --rm opencode
 
 You can now interact with the AI agent and provide instructions for manual testing.
 
+**Note:** When accessing the Next.js development server from inside the Docker container, use `http://host.docker.internal:3000` instead of `http://localhost:3000`. The latter refers to the container itself.
+
+On native Linux, the Next.js development server must also be reachable through the Docker host gateway. This may require adjusting the development server's listening address and verifying firewall rules.
+
 ### Step 4: Access the Container's Shell (Optional)
 
 If you need to inspect files inside the running container, open another terminal.
@@ -277,3 +248,27 @@ To exit the container shell:
 ```bash
 exit
 ```
+
+---
+
+## Troubleshooting
+
+### Ollama Connection Errors
+
+If OpenCode reports that it cannot connect to Ollama:
+
+1. Verify that Ollama is running.
+2. Confirm that `qwen3:4b-instruct` is installed.
+3. Check that Ollama is listening on the expected address and port.
+4. Verify that the container can reach the Ollama API using `host.docker.internal:11434`.
+5. On Linux, verify the Docker host gateway mapping and any applicable firewall rules.
+
+A successful API connection does not necessarily guarantee that model inference will complete successfully.
+
+### Slow Responses or Timeouts
+
+Local model inference performance depends on available hardware resources.
+
+Systems with limited CPU, RAM, or GPU resources may experience slow responses or request timeouts, especially when running inside a virtual machine.
+
+If requests time out while waiting for response headers, test Ollama inference directly before assuming the issue is related to Docker networking.
