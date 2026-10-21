@@ -135,7 +135,7 @@ Ensure Ollama is running and the required model has been downloaded.
 Start the AI agent:
 
 ```bash
-docker compose run --rm agent
+docker compose run --rm opencode
 ```
 
 You can now interact with the AI agent and provide instructions for manual testing.
