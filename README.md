@@ -43,25 +43,135 @@ In Docker Desktop, navigate to **Settings → General** and ensure **Use the WSL
 
 ### 3. Ollama and Qwen3
 
-Ollama is used to host the local language model.
-
-Download and install [Ollama](https://ollama.com/download) for your operating system.
-
-After installation, download the required model:
+Install [Ollama](https://ollama.com/download) and download the required model:
 
 ```bash
 ollama pull qwen3:4b-instruct
 ```
 
-Verify that the model is installed:
+Verify the model is installed:
 
 ```bash
 ollama list
 ```
 
-Ensure Ollama is running before starting the AI agent.
+#### Configure Context Window
 
-**Important:** The Docker container must be able to connect to the Ollama server running on the host machine. The required network configuration may differ between Windows, macOS, and Linux.
+For consistent testing, we use a context window of **16,384 tokens**.
+
+Configure Ollama's default context length using the `OLLAMA_CONTEXT_LENGTH` environment variable.
+
+**Windows (PowerShell):**
+
+```powershell
+[Environment]::SetEnvironmentVariable("OLLAMA_CONTEXT_LENGTH", "16384", "User")
+```
+
+Restart Ollama after changing this setting.
+
+**macOS / Linux:**
+
+If running Ollama manually:
+
+```bash
+OLLAMA_CONTEXT_LENGTH=16384 ollama serve
+```
+
+If Ollama is managed by systemd on Linux, follow the configuration below instead.
+
+**Note:** OpenCode must also be configured with the appropriate model context limit. Increasing the context window increases memory usage.
+
+#### Configure Ollama Networking and Context (Linux Only)
+
+On Linux, Ollama may listen only on `127.0.0.1`, preventing Docker containers from connecting.
+
+We configure Ollama to listen on the Docker bridge interface rather than all network interfaces. This also sets the context window to 16,384 tokens.
+
+**1. Find the Docker bridge IP:**
+
+```bash
+ip -4 addr show docker0
+```
+
+Look for an address such as `172.17.0.1`.
+
+**2. Configure Ollama:**
+
+Replace `172.17.0.1` below if your Docker bridge uses a different address.
+
+```bash
+sudo mkdir -p /etc/systemd/system/ollama.service.d
+```
+
+```bash
+printf '[Service]\nEnvironment="OLLAMA_HOST=172.17.0.1:11434"\nEnvironment="OLLAMA_CONTEXT_LENGTH=16384"\n' | sudo tee /etc/systemd/system/ollama.service.d/override.conf
+```
+
+**3. Restart Ollama:**
+
+```bash
+sudo systemctl daemon-reload
+sudo systemctl restart ollama
+```
+
+**4. Verify the listener:**
+
+```bash
+ss -ltnp | grep 11434
+```
+
+You should see Ollama listening on the Docker bridge address.
+
+**5. Test Docker connectivity:**
+
+From the directory containing `compose.yaml`:
+
+```bash
+docker compose run --rm --entrypoint /bin/sh opencode -c "curl -i http://host.docker.internal:11434/api/tags"
+```
+
+A successful connection should return HTTP `200 OK`.
+
+**Important:** When Ollama listens only on the Docker bridge IP, local Ollama CLI commands may need the same address:
+
+```bash
+OLLAMA_HOST=172.17.0.1:11434 ollama list
+```
+
+This configuration assumes Ollama is installed as a systemd service. It reduces network exposure compared with binding to `0.0.0.0`, but does not provide authentication.
+
+#### Windows and macOS Networking
+
+Docker Desktop supports `host.docker.internal` for accessing services running on the host machine.
+
+In most cases, no additional networking configuration is necessary. If OpenCode cannot connect to Ollama, verify the server is running and that the container can reach port `11434`.
+**4. Verify the listener:**
+
+```bash
+ss -ltnp | grep 11434
+```
+
+You should see Ollama listening on the Docker bridge IP rather than `0.0.0.0`.
+
+**5. Test Docker connectivity:**
+
+From the directory containing `compose.yaml`:
+
+```bash
+docker compose run --rm --entrypoint /bin/sh opencode -c "curl -i http://host.docker.internal:11434/api/tags"
+```
+
+A successful connection should return an HTTP `200 OK` response.
+
+**Note:** This configuration assumes Ollama runs as a systemd service and the Docker bridge IP is reachable from the container. It may also require configuring the Ollama CLI to use the bridge address instead of `localhost`.
+
+Binding to the Docker bridge reduces network exposure, but it does not provide authentication. Keep the Docker environment and VM network restricted to trusted users.
+
+#### Windows and macOS
+
+Docker Desktop supports `host.docker.internal` for accessing host services. In most cases, no Ollama listener changes are necessary.
+
+If the agent cannot connect, verify Ollama is running and test the API from inside Docker before changing network settings.
 
 ### 4. Node.js and npm
 
