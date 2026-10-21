@@ -58,25 +58,7 @@ ollama list
 
 #### Configure Context Window
 
-For consistent testing, the intended context window is **16,384 tokens**.
-
-Configure Ollama's default context length using the `OLLAMA_CONTEXT_LENGTH` environment variable.
-
-**Windows (PowerShell):**
-
-```powershell
-[Environment]::SetEnvironmentVariable("OLLAMA_CONTEXT_LENGTH", "16384", "User")
-```
-
-Restart Ollama after changing this setting.
-
-**macOS / Linux:**
-
-If running Ollama manually:
-
-```bash
-OLLAMA_CONTEXT_LENGTH=16384 ollama serve
-```
+For consistent testing, the intended context window is **16,384 tokens**. Navigate to the Ollama app settings, find the context length slider and, increase to at least 16k.
 
 If Ollama is managed by systemd on Linux, follow the Linux configuration below instead.
 
