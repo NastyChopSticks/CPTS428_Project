@@ -139,7 +139,7 @@ No separate installation of React or Next.js is necessary. Project dependencies 
 
 ---
 
-## Building and Running Test Scripts
+## Building and Running Harness
 
 1. Navigate to the directory containing the cloned repository and run:
 
