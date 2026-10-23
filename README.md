@@ -171,7 +171,7 @@ npm run dev
 
 Keep this terminal running while executing the tests. The website should be accessible at `http://localhost:3000
 
-## Manual Testing
+## Manual Testing (For developers Only)
 
 The following instructions explain how to start the Next.js website and interact with the containerized AI agent.
 
