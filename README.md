@@ -169,8 +169,27 @@ Then start the development server:
 npm run dev
 ```
 
-Keep this terminal running while executing the tests. The website should be accessible at `http://localhost:3000
+Keep this terminal running while executing the tests. The website should be accessible at `http://localhost:3000`.
 
+### 3. Run the Test Harness
+
+Oepn a second terminal and ensure you are in the repository directory containing `harness.py`.
+
+**Windows:**
+
+```bash
+python harness.py
+```
+
+**macOS / Linux:**
+
+```bash
+python3 harness.py
+```
+
+**Note:** Depending on your Python installation, either `python` or `python3` may work on any operating system.
+
+The test harness will initialize the Docker container, execute the prompt injection tests, report the results, and remove the testing container upon completion.
 ## Manual Testing (For developers Only)
 
 The following instructions explain how to start the Next.js website and interact with the containerized AI agent.
