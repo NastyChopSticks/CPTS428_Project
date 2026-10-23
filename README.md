@@ -62,7 +62,7 @@ For consistent testing, the intended context window is **16,384 tokens**. Naviga
 
 If Ollama is managed by systemd on Linux, follow the Linux configuration below instead.
 
-**Note:** OpenCode must also be configured with a compatible model context limit. Setting the Ollama environment variable alone does not guarantee that every request uses the specified context length. Increasing the context window also increases memory usage.
+**Note:** OpenCode must also be configured with a compatible model context limit. Setting the Ollama environment variable alone does not guarantee that every request uses the specified context length. Increasing the context window also increases memory usage. The project is set up with a default configuration for a context length of 16k increasing it would require you to change the opencode.json file.
 
 #### Configure Ollama Networking and Context (Linux Only)
 
@@ -139,17 +139,37 @@ No separate installation of React or Next.js is necessary. Project dependencies 
 
 ---
 
-## Building and Running Harness
+## Building and Running the Test Harness
 
-1. Navigate to the directory containing the cloned repository and run:
+Before proceeding, ensure Docker, Python 3, Node.js, npm, and Ollama are installed and configured according to the dependencies section. Ensure Docker and Ollama are running and the required Qwen model is installed.
 
-   ```bash
-   docker compose build
-   ```
+### 1. Build the Docker Image
 
-2. **WIP:** Additional instructions will be added once the automated test scripts are implemented.
+Open a terminal, navigate to the root directory of the cloned repository (where `docker-compose.yml` is located), and run:
 
----
+```bash
+docker compose build
+```
+
+This builds the Docker image containing OpenCode and its required dependencies.
+
+### 2. Start the Next.js Website
+
+Open a second terminal and navigate to the `my-app` directory inside the cloned repository.
+
+For the first launch only, install the required dependencies:
+
+```bash
+npm install
+```
+
+Then start the development server:
+
+```bash
+npm run dev
+```
+
+Keep this terminal running while executing the tests. The website should be accessible at `http://localhost:3000
 
 ## Manual Testing
 
