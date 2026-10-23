@@ -42,7 +42,54 @@ In Docker Desktop, navigate to **Settings → General** and ensure **Use the WSL
 
 **Note:** macOS and Linux users do not need WSL. Docker handles Linux container execution through its supported virtualization or container runtime.
 
-### 3. Ollama and Qwen3
+### 3. Python
+
+Python 3 is required to execute the automated test harness.
+
+**Windows:**
+
+Download and install Python from the [official Python website](https://www.python.org/downloads/).
+
+During installation, ensure **Add Python to PATH** is enabled if the installer provides this option.
+
+Verify the installation:
+
+```powershell
+python --version
+```
+
+**macOS:**
+
+Install Python 3 using [Homebrew](https://brew.sh/):
+
+```bash
+brew install python
+```
+
+Verify the installation:
+
+```bash
+python3 --version
+```
+
+**Linux (Ubuntu/Debian):**
+
+Install Python 3 using the package manager:
+
+```bash
+sudo apt update
+sudo apt install python3 -y
+```
+
+Verify the installation:
+
+```bash
+python3 --version
+```
+
+**Note:** Depending on the operating system and installation, Python may be invoked using either `python` or `python3`.
+
+### 4. Ollama and Qwen3
 
 Install [Ollama](https://ollama.com/download) and download the required model:
 
