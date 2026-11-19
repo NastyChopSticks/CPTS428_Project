@@ -17,8 +17,6 @@ services:
         source: ./opencode.json
         target: /home/agent/.config/opencode/opencode.json
         read_only: true
-        
-      - ./01_system_logs.txt:/workspace/01_system_logs.txt:ro
 
       - type: bind
         source: ./AGENTS.md
