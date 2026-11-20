@@ -1,4 +1,5 @@
-
+from datetime import datetime, timezone
+from tempfile import mkdtemp
 import subprocess
 from pathlib import Path
 
@@ -27,25 +28,63 @@ def init_container():
         print(f"[ERROR] Failed to initialize container: {e.stderr}")
         return False
 
+class TrialRunError(RuntimeError):
+    def __init__(self, reason, log_dir):
+        super().__init__(reason)
+        self.log_dir = log_dir
+
+def record_trial_error(error):
+    import json
+
+    record = {
+        "outcome": "error",
+        "reason": str(error),
+        "evidence": error.log_dir.as_posix(),
+    }
+    path = error.log_dir / "outcome.json"
+    path.write_text(json.dumps(record, indent=2) + "\n", encoding="utf-8")
+    return record
 
 def run_prompt(prompt):
     print(f"Running prompt: {prompt}")
 
-    result = subprocess.run(
-        [
-            "docker", "exec",
-            CONTAINER_NAME,
-            "opencode", "run", prompt
-        ],
-        capture_output=True,
-        text=True,
-        timeout=500
-    )
+    log_root = Path("results") / "runs"
+    log_root.mkdir(parents=True, exist_ok=True)
+    run_dir = Path(mkdtemp(prefix="run_", dir=log_root))
+    status_path = run_dir / "status.txt"
+    stdout_path = run_dir / "stdout.txt"
+    stderr_path = run_dir / "stderr.txt"
 
-    if result.returncode != 0:
-        print(f"Error: {result.stderr}")
+    started = datetime.now(timezone.utc).isoformat()
+    status_path.write_text(f"started={started}\n", encoding="utf-8")
+    print(f"Saving run output to {run_dir}", flush=True)
 
-    return result.stdout
+    status = "interrupted"
+    try:
+        with stdout_path.open("wb") as stdout, stderr_path.open("wb") as stderr:
+            result = subprocess.run(
+                ["docker", "exec", CONTAINER_NAME, "opencode", "run", prompt],
+                stdout=stdout,
+                stderr=stderr,
+                timeout=500,
+                check=True,
+            )
+        status = f"completed exit={result.returncode}"
+    except subprocess.TimeoutExpired as error:
+        status = "error reason=timeout"
+        raise TrialRunError(status, run_dir) from error
+    except subprocess.CalledProcessError as error:
+        status = f"error exit={error.returncode}"
+        raise TrialRunError(status, run_dir) from error
+    except OSError as error:
+        status = f"error reason={error}"
+        raise TrialRunError(status, run_dir) from error
+    finally:
+        with status_path.open("a", encoding="utf-8") as status_file:
+            status_file.write(f"ended={datetime.now(timezone.utc).isoformat()}\n")
+            status_file.write(f"status={status}\n")
+
+    return stdout_path.read_text(encoding="utf-8", errors="replace")
 
 
 def reset_file_dir():
@@ -132,14 +171,27 @@ def main():
     if not init_container():
         return
 
+    run_checks(
+        [
+            ("Read test:", test_read),
+            ("Write test:", test_write),
+            ("Dilution test:", test_dillute),
+        ],
+        record_trial_error,
+        close_container,
+    )
+
+
+def run_checks(checks, record_error, cleanup):
     try:
-        print("Read test:", test_read())
-        print("Write test:", test_write())
-        print("Dilution test:", test_dillute())
-
+        for label, check in checks:
+            try:
+                result = check()
+            except TrialRunError as error:
+                result = record_error(error)
+            print(label, result)
     finally:
-        close_container()
-
+        cleanup()
 
 if __name__ == "__main__":
     main()

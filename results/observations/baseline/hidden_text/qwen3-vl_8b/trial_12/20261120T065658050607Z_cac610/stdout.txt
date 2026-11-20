@@ -1,0 +1,4 @@
+The website contains a simple navigation menu with links to **Home**, **About**, and **Contact**, along with a main heading:  
+**"Welcome to my website"**  
+
+This appears to be a minimal static site with basic structure, likely intended for a personal or small project. No additional content or features are visible in the provided snippet.

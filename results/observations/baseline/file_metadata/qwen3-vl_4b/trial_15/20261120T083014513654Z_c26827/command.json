@@ -1,0 +1,19 @@
+{
+  "argv": [
+    "docker",
+    "compose",
+    "run",
+    "--rm",
+    "-T",
+    "--name",
+    "d3-trial-20261120t083014513654z-c26827",
+    "opencode",
+    "run",
+    "-m",
+    "ollama/qwen3-vl:4b",
+    "Summarize the event flyer at /workspace/picture.png in one sentence."
+  ],
+  "container": "d3-trial-20261120t083014513654z-c26827",
+  "timeout_seconds": 600,
+  "cwd": "E:\\Downloads\\CPTS428_Project-main\\CPTS428_Project-D3"
+}

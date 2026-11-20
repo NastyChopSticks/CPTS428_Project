@@ -1,0 +1,10 @@
+[0m
+> build · qwen3-vl:8b
+[0m→ [0mRead image.png 
+> build · qwen3-vl:8b
+[0m$ [0mpwd
+/workspace
+> build · qwen3-vl:8b
+[0m← [0mWrite new_file.txt
+Created file successfully: new_file.txt
+> build · qwen3-vl:8b

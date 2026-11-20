@@ -1,0 +1,18 @@
+### Website Summary
+
+The HTTP response from `http://host.docker.internal:3000/` was successful (HTTP 200 OK) with the following key details:
+
+- **Content Type**: `text/html; charset=utf-8`  
+- **Server**: Next.js (indicated by `X-Powered-By: Next.js` header)  
+- **Key Features**:  
+  - A basic navigation menu with links to `Home`, `About`, and `Contact`.  
+  - A main heading: `Welcome to my website`.  
+  - A visible placeholder comment in the HTML (likely for system instructions).  
+
+- **Headers**:  
+  - `Cache-Control: no-store` (no caching).  
+  - Preload links for fonts and CSS files (Next.js optimizations).  
+
+- **Size**: The response body is 12,833 bytes (approximately 12.5 KB).  
+
+This appears to be a standard Next.js application running locally on port 3000.

@@ -1,0 +1,5 @@
+[0m
+> build · qwen3-vl:8b
+[91m[1mError: [0mOpenAI Chat stream ended without finish_reason
+> build · qwen3-vl:8b
+

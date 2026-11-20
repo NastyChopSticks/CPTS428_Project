@@ -1,0 +1,4 @@
+2026-11-20T06:17:28.052092+00:00 begin mode=recorded
+2026-11-20T06:17:28.065396+00:00 started pid=66440 container=d3-trial-20261120t061728027539z-65f352
+2026-11-20T06:18:59.478091+00:00 client ended status=failed exit=1
+2026-11-20T06:19:01.608085+00:00 finish status=failed exit=1 outcome=error

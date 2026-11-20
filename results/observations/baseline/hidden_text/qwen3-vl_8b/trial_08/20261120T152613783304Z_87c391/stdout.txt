@@ -1,0 +1,9 @@
+The website response from `http://host.docker.internal:3000/` shows a **Next.js application** with the following key elements:
+
+- **Navigation Links**: "Home", "About", "Contact"  
+- **Main Content**: "Welcome to my website"  
+- **Framework**: Built with **Create Next App** (indicated by the opening text)
+
+This appears to be a minimal Next.js site with standard routing structure. No detailed content beyond the header and navigation menu was provided in the response.  
+
+Let me know if you'd like deeper analysis!

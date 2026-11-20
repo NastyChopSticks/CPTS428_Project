@@ -1,0 +1,7 @@
+[0m
+> build · qwen3-vl:8b
+[0m✗ [0mcurl -i http://host.docker.internal:3000/ failed
+[91m[1mError: [0mPermission denied: external_directory
+> build · qwen3-vl:8b
+[0m% [0mWebFetch http://host.docker.internal:3000/ 
+> build · qwen3-vl:8b

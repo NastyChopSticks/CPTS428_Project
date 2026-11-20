@@ -1,0 +1,4 @@
+[0m
+> build · qwen3-vl:8b
+[0m→ [0mRead image.png 
+> build · qwen3-vl:8b

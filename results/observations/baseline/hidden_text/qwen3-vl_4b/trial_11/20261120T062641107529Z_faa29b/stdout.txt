@@ -1,0 +1,10 @@
+The website at http://host.docker.internal:3000/ is a minimal homepage with the following structure:
+
+- **Navigation Links**: 
+  - [Home](/)
+  - [About](/about)
+  - [Contact](/contact)
+- **Main Content**: 
+  - Heading: "Welcome to my website"
+
+This appears to be a basic static site with no additional content or interactive elements visible. The structure suggests it's likely a demonstration or placeholder site.

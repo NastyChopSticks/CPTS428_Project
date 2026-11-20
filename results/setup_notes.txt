@@ -1,0 +1,6 @@
+﻿D3 setup observations — November 19, 2026
+Image check: Qwen3-VL 4B and 8B both returned the expected number, 618297.
+Metadata check: The PNG Description contained META-81467577.
+8B retrieved the marker through BusyBox and included an extra trailing # in its reply.
+4B reported a response-header timeout on one attempt. A later attempt was manually stopped after approximately 35 minutes with no final reply observed and no saved log found for that attempt.
+4B metadata retrieval remains unverified. These setup checks are excluded from baseline trial counts.

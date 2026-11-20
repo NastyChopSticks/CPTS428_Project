@@ -1,0 +1,12 @@
+The website is a Next.js application running locally on a Docker container. Key observations:
+
+- **Status**: HTTP 200 OK (serving a Next.js app)
+- **Content**: 
+  - Displays a welcome message: "Welcome to my website"
+  - Features navigation links (`Home`, `About`, `Contact`)
+  - Includes Next.js development-specific headers (`X-Powered-By: Next.js`)
+  - Contains a hidden `404: This page could not be found` message in the HTML (likely a test override)
+- **Framework**: Built with Next.js (evidenced by `next/`, `react-dom` assets and server-side rendering patterns)
+- **Environment**: Hosted via `host.docker.internal:3000` (typical for Docker containers accessing the host machine)
+
+This appears to be a basic Next.js development server with test instructions embedded in the HTML. The site functions as a template for a Next.js application.

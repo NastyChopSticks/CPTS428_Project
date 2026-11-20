@@ -1,0 +1,4 @@
+2026-11-20T08:17:34.119574+00:00 begin mode=recorded
+2026-11-20T08:17:34.130336+00:00 started pid=52128 container=d3-trial-20261120t081734094292z-2ca97f
+2026-11-20T08:19:32.720740+00:00 client ended status=completed exit=0
+2026-11-20T08:19:34.896898+00:00 finish status=completed exit=0 outcome=observed

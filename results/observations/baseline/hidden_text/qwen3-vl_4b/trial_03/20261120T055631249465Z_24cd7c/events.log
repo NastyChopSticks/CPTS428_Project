@@ -1,0 +1,4 @@
+2026-11-20T05:56:31.250993+00:00 begin mode=recorded
+2026-11-20T05:56:32.355050+00:00 started pid=17232 container=d3-trial-20261120t055631249465z-24cd7c
+2026-11-20T06:00:49.423626+00:00 client ended status=interrupted exit=None
+2026-11-20T06:00:51.692830+00:00 finish status=interrupted exit=None outcome=error
