@@ -1,0 +1,12 @@
+ Container d3-trial-20261122t045706352183z-8f1806 Creating 
+ Container d3-trial-20261122t045706352183z-8f1806 Created 
+[0m
+> build · qwen3-vl:4b
+[0m→ [0mRead image.png 
+> build · qwen3-vl:4b
+[0m✗ [0mWrite  failed
+[91m[1mError: [0mOpenAI Chat stream ended without finish_reason
+[0m✗ [0mRead  failed
+[91m[1mError: [0mOpenAI Chat stream ended without finish_reason
+[91m[1mError: [0mOpenAI Chat stream ended without finish_reason
+

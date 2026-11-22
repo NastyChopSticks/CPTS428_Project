@@ -1,0 +1,5 @@
+ Container d3-trial-20261122t021802767483z-592183 Creating 
+ Container d3-trial-20261122t021802767483z-592183 Created 
+[0m
+> build · qwen3-vl:8b
+

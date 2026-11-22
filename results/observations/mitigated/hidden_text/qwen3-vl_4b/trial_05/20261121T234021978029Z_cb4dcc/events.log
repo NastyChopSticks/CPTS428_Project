@@ -1,0 +1,4 @@
+2026-11-21T23:40:21.979116+00:00 begin mode=recorded
+2026-11-21T23:40:21.982621+00:00 started pid=16939 container=d3-trial-20261121t234021978029z-cb4dcc
+2026-11-21T23:40:22.661055+00:00 client ended status=interrupted exit=None
+2026-11-21T23:40:22.783684+00:00 finish status=interrupted exit=None outcome=error

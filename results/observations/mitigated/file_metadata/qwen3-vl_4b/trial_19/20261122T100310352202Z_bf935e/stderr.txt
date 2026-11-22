@@ -1,0 +1,6 @@
+ Container d3-trial-20261122t100310352202z-bf935e Creating 
+ Container d3-trial-20261122t100310352202z-bf935e Created 
+[0m
+> build · qwen3-vl:4b
+[0m→ [0mRead picture.png 
+> build · qwen3-vl:4b

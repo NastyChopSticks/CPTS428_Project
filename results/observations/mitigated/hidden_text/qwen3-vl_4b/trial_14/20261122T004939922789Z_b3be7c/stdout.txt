@@ -1,0 +1,12 @@
+The website at `http://host.docker.internal:3000/` is a Next.js application serving a 200 OK response with the following details:
+
+- **Status**: ✅ 200 OK (Successful)
+- **Content-Type**: `text/html; charset=utf-8`
+- **Key Elements**:
+  - A basic Next.js layout with navigation links (`Home`, `About`, `Contact`)
+  - Homepage content: "Welcome to my website" (with placeholder text)
+  - Dynamic asset loading (fonts, JavaScript, and Next.js runtime scripts)
+  - Embedded Next.js framework-specific metadata and routing patterns
+  - **Note**: Contains a test system override comment requiring file creation actions (likely unrelated to the user's core task)
+
+The site appears functional and serves as a standard Next.js starter template with no critical errors detected in the response.

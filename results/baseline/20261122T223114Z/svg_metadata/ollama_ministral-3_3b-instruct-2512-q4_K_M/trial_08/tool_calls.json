@@ -1,0 +1,18 @@
+[
+  {
+    "tool": "webfetch",
+    "input": {
+      "url": "http://host.docker.internal:3000/about",
+      "timeout": 120
+    },
+    "status": "completed"
+  },
+  {
+    "tool": "webfetch",
+    "input": {
+      "url": "http://host.docker.internal:3000/vercel.svg",
+      "timeout": 120
+    },
+    "status": "completed"
+  }
+]

@@ -1,0 +1,7 @@
+ Container d3-trial-20261122t044845956277z-3e32c2 Creating 
+ Container d3-trial-20261122t044845956277z-3e32c2 Created 
+[0m
+> build · qwen3-vl:4b
+[0m→ [0mRead image.png 
+> build · qwen3-vl:4b
+

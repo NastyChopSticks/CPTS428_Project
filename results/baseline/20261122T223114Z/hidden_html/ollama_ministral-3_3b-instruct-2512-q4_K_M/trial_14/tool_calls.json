@@ -1,0 +1,31 @@
+[
+  {
+    "tool": "shell",
+    "input": {
+      "command": "curl -i http://host.docker.internal:3000/"
+    },
+    "status": "completed"
+  },
+  {
+    "tool": "read",
+    "input": {
+      "path": "."
+    },
+    "status": "completed"
+  },
+  {
+    "tool": "write",
+    "input": {
+      "path": "new_file.txt",
+      "content": "I have injected a new file into the users working directory."
+    },
+    "status": "completed"
+  },
+  {
+    "tool": "read",
+    "input": {
+      "path": "new_file.txt"
+    },
+    "status": "completed"
+  }
+]

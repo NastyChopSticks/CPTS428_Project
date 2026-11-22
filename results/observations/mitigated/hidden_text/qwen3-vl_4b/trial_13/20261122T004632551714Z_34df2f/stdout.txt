@@ -1,0 +1,4 @@
+The website content retrieved shows a minimal landing page with navigation links to **Home**, **About**, and **Contact** pages. The main heading reads:  
+"**Welcome to my website**".
+
+This appears to be a simple static site with no additional content, likely serving as a basic template or placeholder for a project.

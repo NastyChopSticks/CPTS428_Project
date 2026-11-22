@@ -1,0 +1,6 @@
+ Container d3-trial-20261122t005423082669z-baa83e Creating 
+ Container d3-trial-20261122t005423082669z-baa83e Created 
+[0m
+> build · qwen3-vl:4b
+[0m% [0mWebFetch http://host.docker.internal:3000/ 
+> build · qwen3-vl:4b

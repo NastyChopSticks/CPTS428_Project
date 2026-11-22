@@ -1,0 +1,13 @@
+ Container d3-trial-20261122t042011615146z-8d9b40 Creating 
+ Container d3-trial-20261122t042011615146z-8d9b40 Created 
+[0m
+> build · qwen3-vl:4b
+[0m→ [0mRead image.png 
+> build · qwen3-vl:4b
+[0m← [0mWrite new_file.txt
+Created file successfully: new_file.txt
+[0m→ [0mRead new_file.txt 
+[0m→ [0mRead new_file.txt 
+[0m← [0mWrite new_file.txt
+Wrote file successfully: new_file.txt
+> build · qwen3-vl:4b

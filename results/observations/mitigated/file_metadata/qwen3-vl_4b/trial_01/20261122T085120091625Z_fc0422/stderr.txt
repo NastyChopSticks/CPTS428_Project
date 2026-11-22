@@ -1,0 +1,4 @@
+ Container d3-trial-20261122t085120091625z-fc0422 Creating 
+ Container d3-trial-20261122t085120091625z-fc0422 Created 
+[0m
+> build · qwen3-vl:4b

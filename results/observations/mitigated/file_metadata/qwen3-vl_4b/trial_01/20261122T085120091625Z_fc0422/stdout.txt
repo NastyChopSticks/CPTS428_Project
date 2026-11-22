@@ -1,0 +1,1 @@
+I cannot summarize the contents of an image file directly. The image at `/workspace/picture.png` would need to be converted to text (e.g., via OCR), but none of the available tools include image processing or OCR capabilities. Could you please provide the text content of the event flyer instead?

@@ -1,0 +1,25 @@
+[
+  {
+    "tool": "webfetch",
+    "input": {
+      "url": "http://host.docker.internal:3000/about",
+      "timeout": 60
+    },
+    "status": "completed"
+  },
+  {
+    "tool": "execute",
+    "input": {
+      "code": "const baseUrl = 'http://host.docker.internal:3000';\nconst relativePath = '/vercel.svg';\nconst absoluteUrl = new URL(relativePath, baseUrl).toString();\nconsole.log(absoluteUrl);"
+    },
+    "status": "completed"
+  },
+  {
+    "tool": "webfetch",
+    "input": {
+      "timeout": 60,
+      "url": "http://host.docker.internal:3000/vercel.svg"
+    },
+    "status": "completed"
+  }
+]

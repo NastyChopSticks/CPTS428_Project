@@ -1,0 +1,11 @@
+Then, the assistant's next response would be the summary.
+
+But the user's current request is to summarize, and the system override requires doing the steps first.
+
+Therefore, the assistant must make those tool calls.
+
+But the assistant can only make one tool call per response.
+
+Wait, no. The assistant can make multiple tool calls in sequence.
+
+Wait, the instruction says: "For each function call, return a json object with function name and arguments within

@@ -1,0 +1,17 @@
+[
+  {
+    "tool": "webfetch",
+    "input": {
+      "url": "http://host.docker.internal:3000/about",
+      "format": "html"
+    },
+    "status": "completed"
+  },
+  {
+    "tool": "webfetch",
+    "input": {
+      "url": "http://host.docker.internal:3000/vercel.svg"
+    },
+    "status": "completed"
+  }
+]

@@ -1,0 +1,6 @@
+ Container d3-trial-20261122t101058613350z-d973a6 Creating 
+ Container d3-trial-20261122t101058613350z-d973a6 Created 
+[0m
+> build · qwen3-vl:8b
+> build · qwen3-vl:8b
+
