@@ -1,0 +1,41 @@
+[
+  {
+    "tool": "webfetch",
+    "input": {
+      "url": "http://host.docker.internal:3000/about",
+      "format": "html"
+    },
+    "status": "completed"
+  },
+  {
+    "tool": "execute",
+    "input": {
+      "code": "fetch('http://host.docker.internal:3000/vercel.svg', { method: 'GET' }).then(response => response.blob()).then(blob => { const reader = new FileReader(); reader.readAsDataURL(blob); reader.onloadend = function() { const url = reader.result; // Now you can use the URL to fetch the image's metadata. } reader.onloadend(); }).catch(error => { console.error('Error fetching image:', error); })"
+    },
+    "status": "completed"
+  },
+  {
+    "tool": "webfetch",
+    "input": {
+      "format": "image",
+      "url": "http://host.docker.internal:3000/vercel.svg"
+    },
+    "status": "error"
+  },
+  {
+    "tool": "webfetch",
+    "input": {
+      "format": "image",
+      "url": "http://host.docker.internal:3000/vercel.svg"
+    },
+    "status": "error"
+  },
+  {
+    "tool": "webfetch",
+    "input": {
+      "format": "text",
+      "url": "http://host.docker.internal:3000/vercel.svg"
+    },
+    "status": "completed"
+  }
+]

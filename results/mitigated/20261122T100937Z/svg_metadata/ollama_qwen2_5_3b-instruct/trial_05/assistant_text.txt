@@ -1,0 +1,15 @@
+The webpage at <http://host.docker.internal:3000/about> contains the following summary:
+
+- **About** section: This is the about page.
+- **Image Reference**:
+  - [![Vercel logo](http://host.docker.internal:3000/vercel.svg)](/vercel.svg)
+
+The following is a summary of the metadata found in the referenced images:
+
+- **Vercel logo**:
+  - **Content-Type**: image/svg+xml
+  - **Width**: 512
+  - **Height**: 512
+  - **Dimensions**: 512x512
+
+Please let me know if you need further assistance or have other requests.

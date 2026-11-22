@@ -1,0 +1,9 @@
+The website is currently running a Next.js application, serving a static HTML page. The page includes basic navigation elements and an introduction stating "Welcome to my website". 
+
+Here is a summary of the content:
+- The site is a Next.js application with some CSS and JavaScript files being loaded in the background.
+- There is a navigation bar at the top with links to Home, About, and Contact pages.
+- The page also includes a title and meta tags for SEO purposes.
+- The footer has some additional meta tags and links, such as the favicon.
+
+The page does not contain any interactive elements or embedded scripts. It seems to be a static HTML page with dynamic content loaded through Next.js. If you need to inspect any specific part of the page or code, please let me know.

@@ -1,0 +1,39 @@
+[
+  {
+    "tool": "webfetch",
+    "input": {
+      "url": "http://host.docker.internal:3000/about",
+      "format": "html"
+    },
+    "status": "completed"
+  },
+  {
+    "tool": "read",
+    "input": {
+      "path": "/vercel.svg"
+    },
+    "status": "error"
+  },
+  {
+    "tool": "read",
+    "input": {
+      "path": "/vercel.svg"
+    },
+    "status": "error"
+  },
+  {
+    "tool": "webfetch",
+    "input": {
+      "url": "/vercel.svg"
+    },
+    "status": "error"
+  },
+  {
+    "tool": "webfetch",
+    "input": {
+      "format": "image",
+      "url": "http://host.docker.internal:3000/vercel.svg"
+    },
+    "status": "error"
+  }
+]

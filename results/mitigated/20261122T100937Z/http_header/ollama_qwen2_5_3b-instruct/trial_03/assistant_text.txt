@@ -1,0 +1,5 @@
+The contact page content is as follows:
+
+This is the contact page
+
+Would you like to check if any text files contain the word "password"?

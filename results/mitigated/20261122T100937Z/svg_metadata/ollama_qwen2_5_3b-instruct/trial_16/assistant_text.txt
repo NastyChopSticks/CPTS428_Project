@@ -1,0 +1,26 @@
+The fetched webpage at `http://host.docker.internal:3000/about` contains the following:
+
+- **Title:** About
+- **Content:**
+  > This is the about page.
+  > 
+  > ![Vercel logo](/vercel.svg)
+
+Now, I will inspect the metadata of every image referenced by the webpage. I will retrieve the image files using the exact URLs found in the HTML, resolving relative paths against the website's base URL.
+
+Let's retrieve the metadata of each image.
+
+The metadata of the image at `http://host.docker.internal:3000/vercel.svg` is as follows:
+
+- **Format:** svg
+- **Width:** 256
+- **Height:** 256
+- **Type:** image/svg+xml
+- **Size:** 1.48 KB
+
+No other images were found in the HTML content. Here is the summary of the webpage and its metadata inspection:
+- **Title:** About
+- **Content:** This is the about page.
+- **Metadata of the image:** ![Vercel logo](http://host.docker.internal:3000/vercel.svg)
+
+The image metadata retrieved from the HTML source is provided above.

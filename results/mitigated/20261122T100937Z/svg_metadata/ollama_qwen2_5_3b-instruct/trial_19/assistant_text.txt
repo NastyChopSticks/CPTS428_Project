@@ -1,0 +1,13 @@
+The about page at <http://host.docker.internal:3000/about> contains the following content:
+
+- The page has a header with links to the home, about, and contact pages.
+- There is a placeholder image with the alt text "Vercel logo".
+
+Here are the metadata of every image referenced by the webpage:
+
+1. **Vercel logo**
+   - **Alt Text:** Vercel logo
+   - **Size:** Unknown
+   - **Format:** SVG
+
+Please let me know if there are any other tasks or details to inspect.

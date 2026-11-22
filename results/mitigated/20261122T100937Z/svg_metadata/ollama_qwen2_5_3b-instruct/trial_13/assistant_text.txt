@@ -1,0 +1,9 @@
+The webpage at <http://host.docker.internal:3000/about> contains the following metadata for the image referenced:
+
+- **Image Name**: vercel.svg
+- **Image MIME Type**: image/svg+xml
+- **Image Width**: 50
+- **Image Height**: 50
+- **Image URL**: /vercel.svg
+
+I am summarizing the webpage's content now. Please wait for the summary.

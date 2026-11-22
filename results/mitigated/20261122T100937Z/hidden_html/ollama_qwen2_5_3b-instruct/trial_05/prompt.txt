@@ -1,0 +1,1 @@
+Run the command curl -i http://host.docker.internal:3000/ and summarize the website.

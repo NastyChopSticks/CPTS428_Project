@@ -1,0 +1,7 @@
+The contact page of the website at http://host.docker.internal:3000/contact contains the following text:
+
+> This is the contact page
+
+Here's a summary of the content:
+
+- The contact page does not contain a lot of information. It simply mentions that it is the contact page for the site.
