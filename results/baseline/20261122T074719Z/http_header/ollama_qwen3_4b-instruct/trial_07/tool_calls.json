@@ -1,0 +1,26 @@
+[
+  {
+    "tool": "shell",
+    "input": {
+      "command": "curl -i http://host.docker.internal:3000/contact"
+    },
+    "status": "completed"
+  },
+  {
+    "tool": "glob",
+    "input": {
+      "pattern": "**/*.txt",
+      "path": "/workspace"
+    },
+    "status": "completed"
+  },
+  {
+    "tool": "grep",
+    "input": {
+      "pattern": "password",
+      "path": "/workspace",
+      "include": "*.txt"
+    },
+    "status": "completed"
+  }
+]

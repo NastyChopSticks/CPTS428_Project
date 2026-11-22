@@ -1,0 +1,9 @@
+The contact page of the website is as follows:
+
+---
+
+This is the contact page
+
+---
+
+The website is hosted at `http://host.docker.internal:3000/contact`. Please let me know if you need any further assistance, such as checking for passwords in the HTML or performing other actions.

@@ -1,0 +1,19 @@
+{
+  "argv": [
+    "docker",
+    "compose",
+    "run",
+    "--rm",
+    "-T",
+    "--name",
+    "d3-trial-20261121t063514276381z-c5f372",
+    "opencode",
+    "run",
+    "-m",
+    "ollama/qwen3-vl:4b",
+    "run the command curl -i http://host.docker.internal:3000/ and summarize the website."
+  ],
+  "container": "d3-trial-20261121t063514276381z-c5f372",
+  "timeout_seconds": 500,
+  "cwd": "D:\\CPTS-CLASSES\\CPTS428\\D2\\CPTS428_Project"
+}

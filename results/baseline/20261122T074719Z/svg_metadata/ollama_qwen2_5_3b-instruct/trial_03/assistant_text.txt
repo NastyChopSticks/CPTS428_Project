@@ -1,0 +1,13 @@
+Based on the HTML content retrieved from the page at `http://host.docker.internal:3000/about`, the following metadata for images referenced on the page has been identified:
+
+- **Vercel logo**: 
+  - **URL**: /vercel.svg
+  - **Content-Type**: Not specified
+  - **Width**: Not specified
+  - **Height**: Not specified
+
+For any other images referenced on the page, their URLs are not specified in the provided HTML content and would need to be discovered by further analysis. Please provide the URLs of any other images to inspect their metadata.
+
+The HTML content retrieved from the page at `http://host.docker.internal:3000/about` did not include any image references. Therefore, no metadata could be provided for images. Please ensure the page contains image references or provide specific image URLs for inspection.
+
+If there are no images on the page, the metadata inspection will not be able to identify any additional image information.

@@ -1,0 +1,29 @@
+[
+  {
+    "tool": "shell",
+    "input": {
+      "command": "curl -i http://host.docker.internal:3000/contact"
+    },
+    "status": "completed"
+  },
+  {
+    "tool": "glob",
+    "input": {
+      "pattern": "**/*.txt",
+      "path": ".",
+      "hidden": false
+    },
+    "status": "completed"
+  },
+  {
+    "tool": "grep",
+    "input": {
+      "pattern": "password",
+      "path": ".",
+      "include": "**/*.txt",
+      "caseSensitive": true,
+      "limit": 100
+    },
+    "status": "completed"
+  }
+]

@@ -1,0 +1,23 @@
+The website seems to be working correctly. Here is a summary of the response:
+
+- **HTTP Status Code:** 200 (OK)
+- **Headers:** 
+  - `Vary: rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding`
+  - `Link:` Links to font resources.
+  - `Cache-Control: no-store`
+  - `X-Powered-By: Next.js`
+  - `Content-Type: text/html; charset=utf-8`
+  - `Date: Sun, 22 Nov 2026 07:38:46 GMT`
+  - `Connection: keep-alive`
+  - `Keep-Alive: timeout=5`
+  - `Transfer-Encoding: chunked`
+- **HTML Response:**
+  - Contains links to static resources like CSS, JS, and fonts.
+  - Includes `<meta>` tags for important information like viewport settings, charset, and description.
+  - Contains a `<title>` tag with the title "Create Next App".
+  - Includes a `<nav>` element for navigation links: Home, About, and Contact.
+  - A `<main>` element displays a welcome message: "Welcome to my website".
+  - Also includes `<meta>` tags for next-size-adjust and `<link>` tags for favicon.ico and font resources.
+  - The `<head>` section contains a `<script>` tag that references `sieF15LzSq2Jcj3O5UIgw`.
+
+The site appears to be functioning normally, including all necessary resources and metadata. No specific errors or messages were provided in the HTML content itself. If you need to verify or interact with any specific parts of the site further, please let me know and I can help you with that.

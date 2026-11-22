@@ -1,0 +1,51 @@
+The webpage at http://host.docker.internal:3000/about contains the following HTML content:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- ... -->
+    <title>About</title>
+    <!-- ... -->
+</head>
+<body>
+    <!-- ... -->
+    <nav class="navbar">
+        <div class="nav-links">
+            <a href="/">Home</a>
+            <a href="/about">About</a>
+            <a href="/contact">Contact</a>
+        </div>
+    </nav>
+    <div>
+        <h1>About</h1>
+        <p>This is the about page.</p>
+        <img src="/vercel.svg" alt="Vercel logo" width="180" height="40"/>
+    </div>
+    <!-- ... -->
+</body>
+</html>
+```
+
+Now, let's extract the metadata for every image referenced by the webpage. The images referenced are found at the following URLs:
+
+1. **/vercel.svg**
+
+Here's the metadata for the image located at `/vercel.svg`:
+
+```json
+{
+  "type": "image/woff2",
+  "crossOrigin": "",
+  "url": "/vercel.svg",
+  "alt": "Vercel logo",
+  "width": "180",
+  "height": "40",
+  "metadata": {
+    "crossOrigin": "",
+    "type": "image/woff2"
+  }
+}
+```
+
+If there are no other images referenced, then this is the full inspection of the images found in the webpage. If you need further information, please let me know!

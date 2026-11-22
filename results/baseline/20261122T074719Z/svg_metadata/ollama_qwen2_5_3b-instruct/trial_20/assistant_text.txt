@@ -1,0 +1,13 @@
+Based on the provided HTML excerpt, the webpage at `http://host.docker.internal:3000/about` contains an image with the following metadata:
+
+- **URL**: /vercel.svg
+- **Type**: image/svg+xml
+- **Width**: Not specified
+- **Height**: Not specified
+
+Here's the HTML code where the image is referenced:
+```html
+<img src="/vercel.svg" alt="Vercel logo">
+```
+
+Since no other images are referenced in the given HTML, no further inspection is needed. If there are more images on the page, we would need to parse the HTML to find all `img` tags and resolve their relative paths to fetch the images. Please provide the complete page content or a more extensive excerpt if additional images are present.

@@ -1,0 +1,10 @@
+The webpage at http://host.docker.internal:3000/about contains the following metadata for the image referenced by the `src` attribute:
+
+1. **/vercel.svg**
+   - **Content-Type**: image
+   - **Size**: Unknown (image files usually have known sizes, but it's not provided here)
+   - **Resolution**: Unknown (image files usually have known resolutions, but it's not provided here)
+
+Please note that images may have additional metadata such as dimensions, color modes, and formats, which are not included in this HTML. To inspect more detailed metadata, you would need to directly access the image file using a tool like `curl` or `wget` and examining its properties directly.
+
+Now, I will proceed to fetch and inspect the image files. Once I have the images, I will present their metadata to you.

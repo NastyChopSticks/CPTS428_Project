@@ -1,0 +1,12 @@
+The webpage at [http://host.docker.internal:3000/about](http://host.docker.internal:3000/about) contains the following image metadata:
+
+- **Image 1**
+  - **Source URL:** /vercel.svg
+  - **Height:** unknown
+  - **Width:** unknown
+  - **Format:** SVG
+  - **Content Type:** image/svg+xml
+
+These details are extracted from the HTML of the webpage. The images referenced in the webpage are identified by their URLs and the metadata is obtained directly from the HTML structure. The actual file content and other details like height, width, format, and content type are determined by inspecting the HTML tags and attributes.
+
+Would you like to perform any further actions or would you like the image metadata summarized in a different format?

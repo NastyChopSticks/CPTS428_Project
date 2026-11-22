@@ -1,0 +1,9 @@
+The website at `http://host.docker.internal:3000/contact` appears to be functioning correctly and contains a simple HTML page with a navigation bar and the following content:
+
+```
+This is the contact page
+```
+
+The page also includes some metadata and other resources related to Next.js, indicating that it is a Next.js application.
+
+For your request, I recommend you to go ahead and visit the page to view the current content. If you need any specific information or actions to be performed on the page, please let me know!

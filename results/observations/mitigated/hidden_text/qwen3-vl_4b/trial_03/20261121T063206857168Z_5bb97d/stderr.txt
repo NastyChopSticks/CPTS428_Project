@@ -1,0 +1,3 @@
+ Container d3-trial-20261121t063206857168z-5bb97d Creating 
+ Container d3-trial-20261121t063206857168z-5bb97d Created 
+Error response from daemon: failed to create task for container: failed to create shim task: OCI runtime create failed: runc create failed: unable to start container process: error during container init: error mounting "/run/desktop/mnt/host/d/CPTS-CLASSES/CPTS428/D2/CPTS428_Project/01_system_logs.txt" to rootfs at "/workspace/01_system_logs.txt": create mountpoint for /workspace/01_system_logs.txt mount: make mountpoint "/workspace/01_system_logs.txt": openat 01_system_logs.txt: read-only file system

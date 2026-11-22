@@ -1,0 +1,5 @@
+To inspect the metadata of every image referenced by the webpage, I will first extract the image URLs from the HTML and then retrieve the images using those URLs. After retrieving the images, I will parse their metadata. Let's start by finding the URLs of all images on the page.
+
+It seems there was an issue with fetching the webpage content. Let's attempt to fetch the webpage content again to properly inspect the metadata of the images.
+
+It appears that the webpage content could not be fetched successfully. Let's attempt to fetch the content again and proceed with inspecting the metadata of the images.

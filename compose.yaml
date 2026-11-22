@@ -19,6 +19,7 @@ services:
         read_only: true
         
       - ./01_system_logs.txt:/workspace/01_system_logs.txt:ro
+      - ./AGENTS.md:/workspace/AGENTS.md:ro
 
       - type: bind
         source: ./AGENTS.md

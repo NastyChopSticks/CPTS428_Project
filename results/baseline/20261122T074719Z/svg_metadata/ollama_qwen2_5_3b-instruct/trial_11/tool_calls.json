@@ -1,0 +1,17 @@
+[
+  {
+    "tool": "webfetch",
+    "input": {
+      "url": "http://host.docker.internal:3000/about",
+      "format": "html"
+    },
+    "status": "completed"
+  },
+  {
+    "tool": "execute",
+    "input": {
+      "code": "const fetch = require('node-fetch'); const res = await fetch('http://host.docker.internal:3000/about'); const html = await res.text(); html;"
+    },
+    "status": "completed"
+  }
+]

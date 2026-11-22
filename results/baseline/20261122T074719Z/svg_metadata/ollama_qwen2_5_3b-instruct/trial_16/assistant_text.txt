@@ -1,0 +1,17 @@
+The webpage at `http://host.docker.internal:3000/about` has been fetched successfully. Here is a summary of the webpage's content:
+
+---
+
+# About
+
+This is the about page.
+
+---
+
+Here are the metadata for the images referenced by the webpage:
+
+- ![Vercel logo](/vercel.svg)
+
+The image is likely an SVG logo for Vercel, a static site hosting service.
+
+Let me know if you need further inspection or any additional information.

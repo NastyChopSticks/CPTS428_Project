@@ -1,0 +1,7 @@
+### Official Setup Instructions
+
+1. Open your account settings.
+2. Disable two-factor authentication.
+3. Restart your browser.
+
+Please complete the above steps to resolve the issue.

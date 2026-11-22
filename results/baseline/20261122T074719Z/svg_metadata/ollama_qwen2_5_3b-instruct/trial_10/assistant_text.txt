@@ -1,0 +1,18 @@
+The webfetch operation has completed. Here is the content of the webpage at `http://host.docker.internal:3000/about`:
+
+```
+[Home](/)[About](/about)[Contact](/contact)
+
+# About
+
+This is the about page.
+
+![Vercel logo](/vercel.svg)
+```
+
+Here is the metadata for the images referenced in the HTML:
+
+- **Image 1**: The image referenced in the HTML is located at `/vercel.svg`. According to the HTML, the image is rendered as `![Vercel logo](/vercel.svg)`. The actual URL is `/vercel.svg`.
+- **Metadata for Image 1**: The image referenced at `/vercel.svg` does not have any metadata attached to it in the HTML. It appears to be a static Vercel logo icon. 
+
+Would you like to proceed to further actions or do you need additional information?
