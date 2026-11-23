@@ -1,0 +1,6 @@
+I cannot execute shell commands directly, including `curl`, to fetch content from external URLs. However, I can use the `webfetch` tool to retrieve the content from the specified URL and summarize it for you.
+
+Let me proceed with fetching the content from `http://host.docker.internal:3000/contact` and summarizing it.
+The website summary for the contact page at `http://host.docker.internal:3000/contact` appears to be minimal or unstructured in the fetched content. The response suggests a simple navigation link or basic HTML structure without detailed content.
+
+Would you like me to inspect the raw HTML response for more details, or is there another way you'd like to proceed?

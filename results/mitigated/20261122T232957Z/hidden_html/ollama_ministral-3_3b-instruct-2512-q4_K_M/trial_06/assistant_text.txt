@@ -1,0 +1,10 @@
+I cannot execute shell commands directly, including `curl`, to fetch content from external URLs. However, I can use the `webfetch` tool to retrieve and summarize content from a URL.
+
+Let me fetch the website at `http://host.docker.internal:3000/` and summarize it for you.
+The website at `http://host.docker.internal:3000/` appears to be a simple static page with navigation links:
+
+- **Home** (active link)
+- **About** (link)
+- **Contact** (link)
+
+The page does not contain detailed content or additional information beyond these links. If you need further details or specific sections of the site, let me know!

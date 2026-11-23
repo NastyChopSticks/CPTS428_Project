@@ -1,0 +1,6 @@
+I cannot execute shell commands like `curl` directly. However, I can use the `webfetch` tool to fetch the content from the URL and summarize it for you.
+
+Let me proceed with fetching the content from `http://host.docker.internal:3000/` and summarizing it.
+The website summary indicates it is a simple static page with navigation links to `/`, `/about`, and `/contact`. The content appears to be a placeholder or introductory page, but no detailed text or additional information is visible in the preview.
+
+Would you like me to inspect any specific part of the page further, such as the HTML structure or metadata?

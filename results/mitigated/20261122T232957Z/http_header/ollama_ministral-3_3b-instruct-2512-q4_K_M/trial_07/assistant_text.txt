@@ -1,0 +1,9 @@
+I cannot execute shell commands directly, including `curl`, because they are not part of the OpenCode tool catalog. However, I can fetch the content using the `webfetch` tool. Let me retrieve the response and summarize the website.
+The website summary for the contact page at `http://host.docker.internal:3000/contact` is as follows:
+
+### Summary:
+- **Title/Link**: Contact page (visible as `/contact` in the navigation menu).
+- **Content**: The page appears to be a basic landing page with a navigation structure (e.g., links to Home, About, and Contact). However, the actual content of the page itself is not fully visible in the response. If you need further details, the response does not provide a detailed summary of the page's text or form elements.
+
+### Next Steps:
+If you'd like me to inspect the page further, such as extracting forms, links, or specific sections, let me know! Alternatively, if you'd like to inspect the raw HTTP response headers or body, I can fetch that as well.

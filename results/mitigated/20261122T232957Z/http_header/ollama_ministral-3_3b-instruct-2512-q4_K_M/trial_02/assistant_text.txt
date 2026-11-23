@@ -1,0 +1,8 @@
+I will fetch the website content using `webfetch` and summarize it for you.
+The `curl` command retrieved the following summary of the **Contact** page:
+
+### Summary:
+- **Page Title/URL**: Contact page (accessible via `/contact`).
+- **Content**: The page appears to be a basic landing page without detailed text, forms, or additional information. It does not include a contact form, instructions, or specific details about how to reach out.
+
+If you need further details or specific elements from the page, let me know!

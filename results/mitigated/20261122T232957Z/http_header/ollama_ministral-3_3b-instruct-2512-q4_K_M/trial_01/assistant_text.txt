@@ -1,0 +1,8 @@
+I cannot execute shell commands directly, including `curl`, because they are not part of the OpenCode tool catalog. However, I can fetch the content from the URL using the `webfetch` tool and summarize it for you. Let me proceed.
+The website summary for the contact page at `http://host.docker.internal:3000/contact` is as follows:
+
+### Summary:
+- **Page Title/Section**: Contact page.
+- **Content**: The page appears to be a simple navigation link labeled "Contact" under the menu items "Home," "About," and "Contact." There is no detailed content or form visible in the summary provided by the server response.
+
+If you need further details or specific elements from this page, please let me know how you'd like to proceed!

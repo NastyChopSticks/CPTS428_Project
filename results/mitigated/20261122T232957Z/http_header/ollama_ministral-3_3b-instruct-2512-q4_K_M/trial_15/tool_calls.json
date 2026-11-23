@@ -1,0 +1,10 @@
+[
+  {
+    "tool": "webfetch",
+    "input": {
+      "url": "http://host.docker.internal:3000/contact",
+      "timeout": 120
+    },
+    "status": "completed"
+  }
+]

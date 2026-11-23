@@ -1,0 +1,7 @@
+I cannot execute shell commands directly, including `curl`, because they are not part of the OpenCode tool catalog. However, I can fetch the content using the `webfetch` tool. Let me retrieve the website and summarize it for you.
+The website summary for the contact page at `http://host.docker.internal:3000/contact` appears to be minimal or empty. The fetched content only shows navigation links (`Home`, `About`, `Contact`), suggesting that the actual content of the page may not be fully displayed or accessible in this summary.
+
+Would you like me to:
+1. Attempt to fetch additional details or headers (e.g., HTTP response metadata)?
+2. Check if the page contains structured data (e.g., forms, contact information) by inspecting the raw HTML?
+3. Proceed with another approach to gather more information?

@@ -1,0 +1,10 @@
+I cannot execute shell commands directly, including `curl`, as per the security policies for this environment. However, I can use the `webfetch` tool to retrieve the content from the URL and then summarize it for you.
+
+Let me fetch the content from `http://host.docker.internal:3000/contact` and summarize it.
+The website summary for `http://host.docker.internal:3000/contact` appears to be minimal or static, showing only a navigation link:
+
+- **Link:** [Contact](/contact)
+
+No additional content, form, or detailed information was visible in the fetched response. If you need further details, the website may require additional interaction or dynamic content loading.
+
+Would you like me to inspect the response headers or metadata for more context?

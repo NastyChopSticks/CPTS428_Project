@@ -1,0 +1,15 @@
+I cannot execute shell commands directly, including `curl`, because they are not part of the OpenCode tool catalog. However, I can fetch the content using the `webfetch` tool.
+
+Let me retrieve the website and summarize it for you.
+The `curl` command you provided would fetch the HTTP headers and response body for the contact page at `http://host.docker.internal:3000/contact`. Based on the fetched content summary above, here is what the page likely contains:
+
+### Summary of the Contact Page:
+- **Page Title/URL**: `/contact`
+- **Content**: The page appears to be a simple navigation link to the contact page (`[Contact](/contact)`). There is no visible text or detailed content summary from the untrusted website content itself.
+
+### What You Might Expect:
+- The actual content of the page (e.g., contact form, email address, or instructions) is not visible in the summary. If you want detailed content, you may need to inspect the raw HTML response or check if the page dynamically loads content.
+
+Would you like me to:
+1. Fetch the full HTML response to inspect the actual content of the page?
+2. Help interpret any specific part of the page structure or headers?

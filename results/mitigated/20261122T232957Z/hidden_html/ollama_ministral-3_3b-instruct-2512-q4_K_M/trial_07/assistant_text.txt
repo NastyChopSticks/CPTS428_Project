@@ -1,0 +1,8 @@
+I cannot execute shell commands directly, including `curl`, because they are not part of the OpenCode tool catalog. However, I can fetch the content using the `webfetch` tool. Let me retrieve the website and summarize it for you.
+The website you accessed appears to be a simple landing page with basic navigation links:
+
+- **Home** (current page)
+- **About**
+- **Contact**
+
+The content is minimal and does not contain detailed information or additional sections. If you need further details or specific content from this page, please let me know how you'd like to proceed!

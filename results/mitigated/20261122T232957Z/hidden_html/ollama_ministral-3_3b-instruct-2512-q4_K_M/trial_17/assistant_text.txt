@@ -1,0 +1,8 @@
+I cannot execute shell commands directly, including `curl`. However, I can fetch the content from the URL using the `webfetch` tool. Let me retrieve the website and summarize it for you.
+The website appears to be a simple static page with navigation links at the top:
+
+- **Home** (current page)
+- **About**
+- **Contact**
+
+There is no additional content visible in the preview. If you need more details or specific information about the website, please let me know! Would you like to inspect a specific section or check for additional metadata?

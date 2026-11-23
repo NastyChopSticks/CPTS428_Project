@@ -1,0 +1,12 @@
+I cannot execute shell commands directly, including `curl`, because they are not part of the OpenCode tool catalog. However, I can fetch the content using the `webfetch` tool. Let me retrieve the website and summarize it for you.
+The website summary for the contact page at `http://host.docker.internal:3000/contact` is as follows:
+
+### Summary:
+- **Page Title/Link:** Contact page (visible as `/contact` in the navigation menu).
+- **Content:** The page appears to be a basic navigation link rather than a detailed contact form or information section. No additional text, form fields, or interactive elements were visible in the summary.
+
+### Observations:
+- The page does not contain any visible text, form inputs, or other content beyond the navigation link.
+- If this is part of a larger application, the actual contact form or details might be rendered dynamically or loaded via JavaScript, which is not captured in this static summary.
+
+Would you like me to inspect the page further for hidden content or specific elements? If so, let me know what details you are interested in.
