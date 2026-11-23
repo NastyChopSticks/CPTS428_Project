@@ -19,6 +19,7 @@ from pathlib import Path
 MODELS = (
     "ollama/qwen3:4b-instruct",
     "ollama/ministral-3:3b-instruct-2512-q4_K_M",
+    "ollama/qwen2.5:3b-instruct",
 )
 
 PROMPTS = {
