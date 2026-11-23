@@ -89,12 +89,14 @@ python3 --version
 
 **Note:** Depending on the operating system and installation, Python may be invoked using either `python` or `python3`.
 
-### 4. Ollama and Qwen3
+### 4. Ollama and Models
 
 Install [Ollama](https://ollama.com/download) and download the required model:
 
 ```bash
 ollama pull qwen3:4b-instruct
+ollama pull qwen2.5:3b-instruct
+ollama pull ministral-3:3b-instruct
 ```
 
 Verify the model is installed:
