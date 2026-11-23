@@ -1,6 +1,0 @@
- Container d3-trial-20261122t074550186361z-ce68b6 Creating 
- Container d3-trial-20261122t074550186361z-ce68b6 Created 
-[0m
-> build · qwen3-vl:8b
-> build · qwen3-vl:8b
-

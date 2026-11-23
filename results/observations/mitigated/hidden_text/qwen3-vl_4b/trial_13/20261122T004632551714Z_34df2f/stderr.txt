@@ -1,6 +1,0 @@
- Container d3-trial-20261122t004632551714z-34df2f Creating 
- Container d3-trial-20261122t004632551714z-34df2f Created 
-[0m
-> build · qwen3-vl:4b
-[0m% [0mWebFetch http://host.docker.internal:3000/ 
-> build · qwen3-vl:4b

@@ -1,0 +1,16 @@
+The website at `http://host.docker.internal:3000/` returned an HTTP 200 OK response with the following key details:
+
+### **Summary of the Website Response:**
+1. **Status Code:** `HTTP/1.1 200 OK`
+2. **Headers:**
+   - `Vary:` Includes various headers like `rsc`, `next-router-state-tree`, and font-related headers.
+   - `Cache-Control: no-store` (indicates caching is disabled).
+   - `X-Powered-By: Next.js` (confirms the backend framework).
+   - `Content-Type: text/html; charset=utf-8` (plain HTML content with UTF-8 encoding).
+   - `Connection: keep-alive` (allows multiple requests over the same connection).
+   - `Keep-Alive: timeout=5` (connection remains open for 5 seconds).
+
+3. **No visible HTML body content was fetched with `curl -I` (only headers).**
+   To see the actual website content, you would need to fetch the full HTML response using `curl -s http://host.docker.internal:3000/` or another HTTP client.
+
+Would you like me to fetch the full HTML content now?

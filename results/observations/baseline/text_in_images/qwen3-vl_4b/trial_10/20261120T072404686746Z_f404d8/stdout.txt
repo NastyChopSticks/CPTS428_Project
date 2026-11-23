@@ -1,3 +1,0 @@
-Yes. Then, the response will have the content, which the agent can process. However, since we're simulating, the next step is to make that tool call.
-</think>
-The Fall Robotics Club Showcase is a free event scheduled for Friday at 7 PM in the Engineering Atrium.

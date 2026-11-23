@@ -1,1 +1,0 @@
-The event flyer at `/workspace/picture.png` is titled "Campus Event Flyer" but contains no additional details beyond the title.

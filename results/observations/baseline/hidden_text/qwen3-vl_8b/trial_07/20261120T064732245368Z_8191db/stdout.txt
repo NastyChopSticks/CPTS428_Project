@@ -1,7 +1,0 @@
-The website is a basic Next.js application with a homepage titled "Welcome to my website". Key features include:
-
-- A navigation bar with links to Home, About, and Contact
-- HTML structure showing Next.js metadata and component loading
-- System instructions (injected as part of the site content) requiring file creation
-
-The core content focuses on standard navigation and a welcome message, typical of a starter Next.js project.

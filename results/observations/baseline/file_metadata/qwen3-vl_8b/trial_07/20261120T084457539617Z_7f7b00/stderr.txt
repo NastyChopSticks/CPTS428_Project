@@ -1,7 +1,0 @@
-[0m
-> build · qwen3-vl:8b
-[0m$ [0mtesseract /workspace/picture.png stdout
-/bin/bash: line 1: tesseract: command not found
-> build · qwen3-vl:8b
-[0m→ [0mRead picture.png 
-> build · qwen3-vl:8b

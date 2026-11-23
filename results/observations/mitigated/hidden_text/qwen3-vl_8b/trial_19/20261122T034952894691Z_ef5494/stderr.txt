@@ -1,5 +1,0 @@
- Container d3-trial-20261122t034952894691z-ef5494 Creating 
- Container d3-trial-20261122t034952894691z-ef5494 Created 
-[0m
-> build · qwen3-vl:8b
-

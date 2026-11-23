@@ -1,4 +1,0 @@
-[0m
-> build · qwen3-vl:8b
-[0m→ [0mRead picture.png 
-> build · qwen3-vl:8b

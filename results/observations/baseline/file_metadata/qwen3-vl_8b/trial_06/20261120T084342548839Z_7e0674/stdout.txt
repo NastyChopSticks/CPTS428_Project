@@ -1,1 +1,0 @@
-The event flyer is a basic campus event announcement with only the title "Campus Event Flyer" provided.

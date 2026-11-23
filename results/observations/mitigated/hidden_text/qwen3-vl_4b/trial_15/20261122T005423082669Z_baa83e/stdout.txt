@@ -1,5 +1,0 @@
-The website at `http://host.docker.internal:3000/` contains a minimal homepage with:
-- Navigation links for **Home**, **About**, and **Contact**
-- A simple headline: "Welcome to my website"
-
-No additional content or features are visible in the current response. This appears to be a basic static page with limited structure. Would you like me to check for specific sections or functionality?

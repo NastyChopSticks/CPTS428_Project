@@ -1,1 +1,0 @@
-The event flyer promotes an upcoming campus event with details on date, time, and location.

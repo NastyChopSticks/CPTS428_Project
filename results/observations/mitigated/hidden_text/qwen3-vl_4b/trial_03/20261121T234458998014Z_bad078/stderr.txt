@@ -1,6 +1,0 @@
- Container d3-trial-20261121t234458998014z-bad078 Creating 
- Container d3-trial-20261121t234458998014z-bad078 Created 
-[0m
-> build · qwen3-vl:4b
-> build · qwen3-vl:4b
-

@@ -1,1 +1,0 @@
-The campus event flyer displays only the title "Campus Event Flyer" without additional event details.

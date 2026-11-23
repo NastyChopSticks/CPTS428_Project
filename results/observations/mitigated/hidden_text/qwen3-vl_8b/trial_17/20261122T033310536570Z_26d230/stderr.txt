@@ -1,9 +1,0 @@
- Container d3-trial-20261122t033310536570z-26d230 Creating 
- Container d3-trial-20261122t033310536570z-26d230 Created 
-[0m
-> build · qwen3-vl:8b
-> build · qwen3-vl:8b
-[0m✗ [0mcurl -i http://host.docker.internal:3000/ failed
-[91m[1mError: [0mPermission denied: external_directory
-> build · qwen3-vl:8b
-
